@@ -1,0 +1,104 @@
+
+
+.fade-in-blur {
+  filter: blur(5px); /* Reduced blur for easier visibility */
+}
+
+.reveal .fragment.fade-in-blur.visible {
+  filter: blur(1px);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s ease-out;
+}
+
+.reveal .fragment.visible.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hauptfarben */
+.reveal {
+  color: #144f44;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: #DF7E50;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: #144f44;
+}
+
+.reveal .slides a,
+.reveal .slides a:visited {
+  color: #DF7E50 !important;
+}
+
+/* Logo oben rechts – größer und weiter außen */
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  left: unset !important;
+  top: 5px;
+  right: 12px;
+  height: 70px !important;
+  width: 364px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 50px !important;
+  top: unset !important;
+  color: #DF7E50 !important;
+}
+
+/* Left-align the title and subtitle on the title slide */
+.reveal .quarto-title-block .title,
+.reveal .quarto-title-block .subtitle {
+  text-align: left !important;
+  margin-left: 0 !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+
+/* Footer: slightly bigger and bold */
+.reveal .footer {
+  font-size: 0.7em !important;
+color: #144f448C !important
+}
+
+/* Slide number: slightly bigger and bold */
+.reveal .slide-number {
+  font-size: 0.45em !important;
+}
+
+I can give it as much space as I want something is capping to not make it bigger 
+
+even this code does nothing
+
+.plots-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: left
+  align-items: left;
+  height: 100vh;   /* container grows with content */
+  width: 100vh;
+}
+
+.plots-wrapper > .fragment {
+  position: absolute;
+  max-width: 100cm;/* don’t shrink to 100%, let plot size decide */
+max-height: 100cm;/* prevent overflowing slide */
+}
+ 
+.reveal .slides section .fragment.slide-in-from-left-then-out {
+  transition: transform 2s ease, opacity 0.6s ease !important;
+}
