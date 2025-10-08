@@ -46,8 +46,8 @@ a {
   left: unset !important;
   top: 5px;
   right: 12px;
-  height: 70px !important;
-  width: 364px !important;
+  width: 190px !important;
+  height: 37px !important;
   max-width: unset !important;
   max-height: unset !important;
 }
@@ -59,15 +59,14 @@ a {
   color: #DF7E50 !important;
 }
 
-/* Left-align the title and subtitle on the title slide */
 .reveal .quarto-title-block .title,
 .reveal .quarto-title-block .subtitle {
   text-align: left !important;
   margin-left: 0 !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
+  font-size: 1.1em !important; /* oder z.B. 18px !important, je nach gewünschter Größe */
 }
-
 
 /* Footer: slightly bigger and bold */
 .reveal .footer {
@@ -80,9 +79,6 @@ color: #144f448C !important
   font-size: 0.45em !important;
 }
 
-I can give it as much space as I want something is capping to not make it bigger 
-
-even this code does nothing
 
 .plots-wrapper {
   position: relative;
